@@ -1,16 +1,7 @@
 @import "_variables";
 
-a {
-  color: $primary-color;
-}
-
-$primary-color: #ff0;
-$serif-fonts: Georgia, Cambria, "Times New Roman", serif;
-$font-base-size: 20px;
-$font-base-size: 20px;
-
 h1 {
-  font-size: $font-base-size * 2.25;
+  font-size: $font-base-size * 2.5;
 }
 
 h2 {
@@ -18,7 +9,20 @@ h2 {
 }
 
 h3 {
-  font-size: $font-base-size * 1.75;
+  font-size: $font-base-size * 4;
+}
+
+h4 {
+  background-color: $fourth-color;
+}
+
+h5 {
+  font-style: italic;
+}
+
+h6 {
+  font-style: oblique;
+  font-weight: lighter;
 }
 
 a {
@@ -36,29 +40,28 @@ body {
   font-size: $font-base-size;
 }
 
-nav {
-  background-color: #0008ff;
-
-  ol {
-    list-style: none;
-
-    a {
-      font-weight: bold;
-      color: white;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
+input {
+  background-color: $secondary-color;
+  font-family: $serif-fonts;
+  font-size: $font-base-size;
+  border-radius: $around-border;
 }
 
-&:hover {
-  text-decoration: underline;
+textarea {
+  background-color: $third-color;
+  font-family: $serif-fonts;
+  font-size: $font-base-size;
+  border-radius: $around-border;
 }
 
-.row {
-  .column {
-    background-color: #00ff1d;
-  }
+td {
+  font-size: $font-base-size * 3;
+}
+
+th {
+  background-color: $primary-color;
+}
+
+img {
+  border-radius: $around-border;
 }
